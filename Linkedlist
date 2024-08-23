@@ -286,12 +286,21 @@ void print(Node* head){
 }
 Node* RemoveKthNode(Node* head,int k){
   int cnt=0;
+  if(head==NULL){
+    return head;
+  }
+  if(k==1){
+    Node* temp=head;
+    head=head->next;
+    delete temp;
+    return head;
+  }
   Node* prev=NULL;
   Node* temp=head;
   while(temp!=NULL){
     cnt++;
     if(cnt==k){
-      prev->next=prev->next->next;
+    prev->next=prev->next->next;
     delete temp;
       break;
     }

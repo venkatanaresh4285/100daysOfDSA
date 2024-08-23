@@ -426,13 +426,13 @@ void print(Node* head){
     temp=temp->next;
   }
 }
-Node* RemoveElement(Node* head,int ele){
+Node* InsertBegin(Node* head,int ele){
  Node* temp=new Node(ele,head);
   return temp;
 }
 int main(){
 vector<int> arr={4,2,4,6,2};
 Node* head=ArraytoLL(arr);
-head =RemoveElement(head,100);
+head =InsertBegin(head,100);
 print(head);
 }

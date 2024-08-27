@@ -25,8 +25,14 @@ Node* convert(vector<int> arr){
   }
   return head;
 }
+void print(Node* head){
+  while(head!=NULL){
+    cout<<head->data<<" ";
+    head=head->next;
+  }
+}
 int main(){
   vector<int> arr={1,2,3,4,5,6};
-  Node* y=convert(head);
-  cout<<y->data;
+  Node* head=convert(arr);
+  print(head);
 }

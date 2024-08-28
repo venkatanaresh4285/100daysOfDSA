@@ -1,0 +1,6 @@
+Queue:
+Queue is a linear Data Structure which follows the First in First in First Order
+
+
+        when ever we are popping an element the first element will be popped 
+                  1 2 3 4 5 

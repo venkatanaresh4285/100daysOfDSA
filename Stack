@@ -1,0 +1,8 @@
+Stack : Stack is a linear data structure which follows last in first out order which means the element which is inserted the first will be removed last
+
+In the stack we have few Operations those are 1.Push 2.Pop,3.Top 4.Size
+
+1 2 3 4 5 6 7
+
+Suppose I am inserting an element in the stack I can them using stack in stl
+
